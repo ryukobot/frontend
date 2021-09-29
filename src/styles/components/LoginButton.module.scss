@@ -1,0 +1,8 @@
+@import "../variables.scss";
+
+.loginbutton {
+	user-select: none;
+	& > div {
+		margin-left: 6px !important;
+	}
+}

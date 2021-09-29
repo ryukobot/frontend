@@ -1,0 +1,54 @@
+@import "./variables.scss";
+
+.loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.waste {
+	position: relative;
+	padding-top: 36vw;
+}
+
+.categorycontainer {
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+}
+
+.categories {
+	background-color: $body-accent;
+	border-radius: 6px;
+}
+
+.categoryContainer {
+	position: sticky;
+	top: 0;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+.navbutton {
+	padding: 0.2vw;
+	border-radius: 4px;
+	text-decoration: none;
+	user-select: none;
+	cursor: pointer;
+	margin-left: 10px;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: $body-lighter-accent;
+		color: $primary-color !important;
+		transition: 0.3s;
+	}
+}
+
+.title {
+	font-family: "Russo One", sans-serif;
+	font-weight: normal;
+}
+
+.table {
+	margin-top: 5vh;
+}

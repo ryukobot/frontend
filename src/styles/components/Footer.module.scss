@@ -1,0 +1,54 @@
+@import "../variables.scss";
+
+.footer {
+	background-color: $body-accent;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+}
+
+.brandcontainer {
+	width: 20vw;
+	margin: 0 !important;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+
+	.title {
+		margin-left: 10px;
+		font-size: 2rem;
+	}
+}
+
+.title {
+	font-family: "Russo One", sans-serif;
+	font-weight: normal;
+}
+
+.description {
+	margin-top: 9px;
+	margin-bottom: 10px;
+	max-width: 280px;
+}
+
+.socials {
+	margin-bottom: 3px;
+}
+
+.darker {
+	color: lighten($body-accent, 30%);
+}
+
+.links {
+	text-align: center;
+}
+
+.linktitle {
+	font-size: 1.5rem;
+}
+
+.link {
+	background-color: $body-accent !important;
+}

@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.navbutton {
+	padding: 0.4vw;
+	border-radius: 4px;
+	text-decoration: none;
+	user-select: none;
+	cursor: pointer;
+	margin-left: 10px;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: $body-lighter-accent;
+		color: $primary-color !important;
+		transition: 0.3s;
+	}
+}

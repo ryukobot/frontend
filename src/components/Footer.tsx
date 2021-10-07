@@ -68,10 +68,6 @@ export default function Footer() {
 							Made with ❤️ by{" "}
 							<a href="https://jacany.com">jacany#0001</a>
 						</small>
-						<br />
-						<small className={Styles.darker}>
-							Copyright ©️ 2021 Chaker LLC.
-						</small>
 					</Col>
 					<Col className={Styles.links}>
 						<b className={Styles.title + " " + Styles.linktitle}>
@@ -123,15 +119,32 @@ export default function Footer() {
 						</ListGroup>
 					</Col>
 				</Row>
-				<div style={{ textAlign: "center" }}>
-					<a
-						title="Go to the top of the page"
-						href="#"
-						style={{ textDecoration: "none" }}
-					>
-						Back to Top ⬆️
-					</a>
-				</div>
+				<hr />
+				<Row>
+					<Col style={{ alignSelf: "center" }}>
+						<a
+							className={Styles.chaker}
+							title="Chaker Website"
+							href="https://chaker.net"
+						>
+							Chaker
+						</a>
+					</Col>
+					<Col style={{ textAlign: "center", alignSelf: "center" }}>
+						<a
+							title="Go to the top of the page"
+							href="#"
+							style={{ textDecoration: "none" }}
+						>
+							Back to Top ⬆️
+						</a>
+					</Col>
+					<Col style={{ textAlign: "right", alignSelf: "center" }}>
+						<small className={Styles.darker}>
+							Copyright ©️ 2021 Chaker LLC.
+						</small>
+					</Col>
+				</Row>
 			</Container>
 		</footer>
 	);

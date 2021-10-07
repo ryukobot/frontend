@@ -275,9 +275,21 @@ export default function Home({ stats }: { stats: IStats }) {
 }
 
 export async function getStaticProps() {
-	const res = await fetch(`${api}/stats`);
+	let stats: IStats;
 
-	const stats: IStats = await res.json();
+	try {
+		const req = await fetch(`${api}/stats`);
+
+		stats = await req.json();
+	} catch (error) {
+		console.error(error);
+		stats = {
+			shards: 0,
+			guilds: 0,
+			users: 0,
+			channels: 0,
+		};
+	}
 
 	return {
 		props: {

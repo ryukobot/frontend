@@ -29,6 +29,11 @@ module.exports = {
 				destination: support,
 				permanent: false,
 			},
+			{
+				source: "/status",
+				destination: "https://ryuko.statuspage.io/",
+				permanent: false,
+			},
 		];
 	},
 };

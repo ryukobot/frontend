@@ -12,6 +12,7 @@ import Col from "react-bootstrap/Col";
 
 // Feature Images
 import MusicScreenshot from "../img/music.png";
+import JoinLeaveScreenshot from "../img/joinleave.png";
 
 interface IStats {
 	guilds: number;
@@ -40,7 +41,7 @@ export default function Home({ stats }: { stats: IStats }) {
 				</div>
 			</div>
 			<Container style={{ paddingTop: "25vh" }}>
-				<Row>
+				<Row className={Styles.feature}>
 					<Col md="auto">
 						<Image
 							src={MusicScreenshot}
@@ -50,7 +51,7 @@ export default function Home({ stats }: { stats: IStats }) {
 					</Col>
 					<Col>
 						<h1 className={Styles.title}>
-							Enjoy High Quality Music
+							🎵 Enjoy High Quality Music
 						</h1>
 						<ul>
 							<li>
@@ -79,39 +80,173 @@ export default function Home({ stats }: { stats: IStats }) {
 				</Row>
 				<Row className={Styles.feature}>
 					<Col>
+						<h1 className={Styles.title}>Rich Logging</h1>
+						<ul>
+							<li>
+								Log Everything!
+								<br />
+								Messages Edits, Message Deletions, Member Joins,
+								Member Leaves, Bans, Kicks, Voice Channel
+								Updates, and more to come!
+							</li>
+							<li>
+								Keep your logs organized and readable with the
+								ability to seperate them into different
+								channels!
+							</li>
+							<li>Clean, Logs are Readable and Informative.</li>
+						</ul>
+					</Col>
+					<Col md="auto">
+						<Image
+							src={MusicScreenshot}
+							alt="Logging in action"
+							layout="intrinsic"
+						/>
+					</Col>
+				</Row>
+				<Row className={Styles.feature}>
+					<Col md="auto">
+						<Image
+							src={MusicScreenshot}
+							alt="Moderation"
+							layout="intrinsic"
+						/>
+					</Col>
+					<Col>
+						<h1 className={Styles.title}>🧑‍⚖️ Moderate Better</h1>
+						<ul>
+							<li>
+								Zero-Trust Permissions. Ryuko primarily uses
+								roles for Moderation Commands, so you don{"'"}t
+								need to give any Discord Permissions to your
+								staff. Just set the role and everything works.
+							</li>
+							<li>
+								Moderate your Members with Muting, Warns,
+								Banning, and Kicking
+							</li>
+							<li>
+								Control your Text Channels with Locking, and
+								Message Purges.
+							</li>
+							<li>
+								Somebody causing issues in VC? Disconnect and
+								them Mute them, the perfect tag team.
+								Additionally you can <i>drag</i> and move a
+								Member between channels.
+							</li>
+						</ul>
+					</Col>
+				</Row>
+				<Row className={Styles.feature}>
+					<Col>
 						<h1 className={Styles.title}>
-							Enjoy High Quality Music
+							🤬 Keep your Channels Clean
 						</h1>
 						<ul>
 							<li>
-								Play music from 5+ Sources! YouTube, Spotify,
-								Soundcloud, Twitch, Bancamp, Direct Links, and
-								more!
+								Automatically Delete Messages that contain
+								Phrases that you control.
 							</li>
+							<li>Extremely fast, nobody will notice.</li>
 							<li>
-								Just Type! Ryuko will automatically search for
-								you!
-							</li>
-							<li>
-								High Quality! Can support thousands of guilds at
-								once easily.
-							</li>
-							<li>
-								Queued a Massive Playlist? Skip straight to the
-								track you want to listen to!
-							</li>
-							<li>
-								Fast Forward, Rewind, and Seek. Get to that one
-								part easily.
+								Effective, matches your phrases to{" "}
+								<b>anywhere</b> in the sentence
 							</li>
 						</ul>
 					</Col>
 					<Col md="auto">
 						<Image
 							src={MusicScreenshot}
-							alt="Playing a Song via Search Query"
+							alt="Word Filter"
 							layout="intrinsic"
 						/>
+					</Col>
+				</Row>
+				<Row className={Styles.feature}>
+					<Col md="auto">
+						<Image
+							src={MusicScreenshot}
+							alt="Verification Process"
+							layout="intrinsic"
+						/>
+					</Col>
+					<Col>
+						<h1 className={Styles.title}>
+							✅ Keep Bots {"&"} Alts Out
+						</h1>
+						<ul>
+							<li>
+								Keep out Bots and Alts, Ryuko has an advanced
+								Verification System to ensure that new Members
+								are legimate.
+							</li>
+							<li>
+								Highly Configurable! Use Verification as a
+								simple Captcha to keep Bots out, or go all in
+								and automatically Ban all VPN/Proxy Users, and
+								Alts.
+							</li>
+							<li>
+								VPN/Proxy Detection, Cookies, and IP Addresses
+								are used for Verifying Members.
+							</li>
+						</ul>
+					</Col>
+				</Row>
+				<Row className={Styles.feature}>
+					<Col>
+						<h1 className={Styles.title}>👋 Greet New Members</h1>
+						<ul>
+							<li>
+								Send Custom Join and Leave Messages into a{" "}
+								<i>special</i> channel with ease!
+							</li>
+							<li>
+								Want to change what the messages look like? You
+								can! There are placeholders you can add in for
+								mentions, username, and more!
+							</li>
+						</ul>
+					</Col>
+					<Col md="auto">
+						<Image
+							src={JoinLeaveScreenshot}
+							alt="Join and Leave messages"
+							layout="intrinsic"
+						/>
+					</Col>
+				</Row>
+				<Row className={Styles.feature}>
+					<Col md="auto">
+						<Image
+							src={MusicScreenshot}
+							alt="Voice Lobbies"
+							layout="intrinsic"
+						/>
+					</Col>
+					<Col>
+						<h1 className={Styles.title}>
+							🗣️ Create Private, Configurable Voice Channels
+						</h1>
+						<ul>
+							<li>
+								Keep out Bots and Alts, Ryuko has an advanced
+								Verification System to ensure that new Members
+								are legimate.
+							</li>
+							<li>
+								Highly Configurable! Use Verification as a
+								simple Captcha to keep Bots out, or go all in
+								and automatically Ban all VPN/Proxy Users, and
+								Alts.
+							</li>
+							<li>
+								VPN/Proxy Detection, Cookies, and IP Addresses
+								are used for Verifying Members.
+							</li>
+						</ul>
 					</Col>
 				</Row>
 			</Container>

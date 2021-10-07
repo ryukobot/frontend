@@ -40,6 +40,9 @@ export default function Header() {
 						<Nav.Link href="/commands" className={Styles.navbutton}>
 							Commands
 						</Nav.Link>
+						<Nav.Link href="/status" className={Styles.navbutton}>
+							Status
+						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>

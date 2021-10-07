@@ -92,6 +92,13 @@ export default function Footer() {
 							>
 								Commands
 							</ListGroup.Item>
+							<ListGroup.Item
+								action
+								href="/status"
+								className={Styles.link + " link"}
+							>
+								Status
+							</ListGroup.Item>
 						</ListGroup>
 					</Col>
 					<Col className={Styles.links}>

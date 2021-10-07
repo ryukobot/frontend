@@ -66,7 +66,7 @@ export default function Footer() {
 						</div>
 						<small>
 							Made with ❤️ by{" "}
-							<a href="https://chaker.net">jacany#0001</a>
+							<a href="https://jacany.com">jacany#0001</a>
 						</small>
 						<br />
 						<small className={Styles.darker}>

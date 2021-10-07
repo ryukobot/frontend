@@ -34,6 +34,11 @@ module.exports = {
 				destination: "https://ryuko.statuspage.io/",
 				permanent: false,
 			},
+			{
+				source: "/docs",
+				destination: "/docs/Getting-Started",
+				permanent: false,
+			},
 		];
 	},
 };

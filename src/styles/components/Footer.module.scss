@@ -59,7 +59,11 @@
 	font-size: 3rem;
 	text-decoration: none;
 	transition: all 0.3s ease-out;
-	background: linear-gradient(45deg, white, white);
+	background: linear-gradient(
+		45deg,
+		$body-lighter-accent,
+		$body-lighter-accent
+	);
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;

@@ -90,6 +90,13 @@ export default function Footer() {
 							</ListGroup.Item>
 							<ListGroup.Item
 								action
+								href="/docs"
+								className={Styles.link + " link"}
+							>
+								Docs
+							</ListGroup.Item>
+							<ListGroup.Item
+								action
 								href="/status"
 								className={Styles.link + " link"}
 							>

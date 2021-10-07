@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+.sidebar {
+	border-right: 2px solid $body-lighter-accent;
+}
+
+.item {
+	background-color: transparent;
+	color: $body-color;
+	transition: 0.3s;
+
+	&:hover {
+		color: $primary-color;
+	}
+}

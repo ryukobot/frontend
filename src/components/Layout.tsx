@@ -25,7 +25,7 @@ export default function Layout({ children }: any) {
 		<>
 			<Header />
 			<main>
-				<Container fluid>
+				<Container>
 					<div style={{ display: "flex" }}>
 						<div className={Styles.sidebar}>
 							<DocsSidebar />

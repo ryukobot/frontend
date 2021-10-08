@@ -129,11 +129,7 @@ export default function Footer() {
 				<hr />
 				<Row>
 					<Col style={{ alignSelf: "center" }}>
-						<a
-							className={Styles.chaker}
-							title="Chaker Website"
-							href="https://chaker.net"
-						>
+						<a className={Styles.chaker} href="https://chaker.net">
 							Chaker
 						</a>
 					</Col>

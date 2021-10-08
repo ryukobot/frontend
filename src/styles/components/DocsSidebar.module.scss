@@ -2,6 +2,12 @@
 
 .sidebar {
 	border-right: 2px solid $body-lighter-accent;
+	padding: 25px 25px;
+
+	& h3 {
+		font-weight: bold;
+		padding: 8px 16px 0;
+	}
 }
 
 .item {

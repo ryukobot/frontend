@@ -31,7 +31,7 @@ module.exports = {
 			},
 			{
 				source: "/status",
-				destination: "https://ryuko.statuspage.io/",
+				destination: "https://bizkit.statuspage.io/",
 				permanent: false,
 			},
 		];

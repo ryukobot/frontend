@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<meta property="og:title" content="Home" />
-					<meta property="og:site_name" content="Ryuko" />
+					<meta property="og:site_name" content="Bizkit" />
 					<meta property="og:type" content="website" />
 					<meta
 						property="og:description"

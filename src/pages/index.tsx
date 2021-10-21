@@ -24,13 +24,13 @@ interface IStats {
 export default function Home({ stats }: { stats: IStats }) {
 	return (
 		<Container fluid>
-			<title>Home - Ryuko</title>
+			<title>Home - Bizkit</title>
 			<div className={Styles.hero}>
 				<div className={Styles.heroinfo}>
 					<h1
 						className={`${Styles.title} ${Styles.infotitle} text-primary`}
 					>
-						Ryuko
+						Bizkit
 					</h1>
 					<h3 className={Styles.infodesc}>
 						A Utility bot with Verification, Music, Tickets, a
@@ -60,7 +60,7 @@ export default function Home({ stats }: { stats: IStats }) {
 								more!
 							</li>
 							<li>
-								Just Type! Ryuko will automatically search for
+								Just Type! Bizkit will automatically search for
 								you!
 							</li>
 							<li>
@@ -80,19 +80,19 @@ export default function Home({ stats }: { stats: IStats }) {
 				</Row>
 				<Row className={Styles.feature}>
 					<Col>
-						<h1 className={Styles.title}>Rich Logging</h1>
+						<h1 className={Styles.title}>❓ Rich Logging</h1>
 						<ul>
 							<li>
-								Log Everything!
+								Be the all-seer!
 								<br />
 								Messages Edits, Message Deletions, Member Joins,
 								Member Leaves, Bans, Kicks, Voice Channel
 								Updates, and more to come!
 							</li>
+							<li>Invite Tracking</li>
 							<li>
-								Keep your logs organized and readable with the
-								ability to seperate them into different
-								channels!
+								The abililty to seperate logs into different
+								channels keep them organized, and readable.
 							</li>
 							<li>Clean, Logs are Readable and Informative.</li>
 						</ul>
@@ -117,7 +117,7 @@ export default function Home({ stats }: { stats: IStats }) {
 						<h1 className={Styles.title}>🧑‍⚖️ Moderate Better</h1>
 						<ul>
 							<li>
-								Zero-Trust Permissions. Ryuko primarily uses
+								Zero-Trust Permissions. Bizkit primarily uses
 								roles for Moderation Commands, so you don{"'"}t
 								need to give any Discord Permissions to your
 								staff. Just set the role and everything works.
@@ -178,7 +178,7 @@ export default function Home({ stats }: { stats: IStats }) {
 						</h1>
 						<ul>
 							<li>
-								Keep out Bots and Alts, Ryuko has an advanced
+								Keep out Bots and Alts, Bizkit has an advanced
 								Verification System to ensure that new Members
 								are legimate.
 							</li>
@@ -232,7 +232,7 @@ export default function Home({ stats }: { stats: IStats }) {
 						</h1>
 						<ul>
 							<li>
-								Keep out Bots and Alts, Ryuko has an advanced
+								Keep out Bots and Alts, Bizkit has an advanced
 								Verification System to ensure that new Members
 								are legimate.
 							</li>
@@ -250,7 +250,18 @@ export default function Home({ stats }: { stats: IStats }) {
 					</Col>
 				</Row>
 			</Container>
-			<div>
+			<div style={{ textAlign: "center", marginTop: "13vh" }}>
+				<h2 style={{ fontSize: "3rem" }} className={Styles.title}>
+					Stop what you&apos;re doing.
+				</h2>
+				<p style={{ marginBottom: "1vh" }}>
+					It&apos;s time to use Bizkit in your server, simplify your
+					life.
+				</p>
+				<br />
+				<InviteButton />
+			</div>
+			<div style={{ marginTop: "10vh", marginBottom: "6vh" }}>
 				<Row className={Styles.statsrow}>
 					<Col>
 						<h1 className={Styles.title}>{stats.guilds}</h1>

@@ -22,7 +22,7 @@ export default function InviteButton() {
 				height={20}
 				layout="intrinsic"
 			/>
-			Invite Ryuko
+			Invite Bizkit
 		</Button>
 	);
 }

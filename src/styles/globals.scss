@@ -31,6 +31,10 @@ code {
 	padding: 4px;
 }
 
+img {
+	user-select: none;
+}
+
 .active {
 	color: $primary-color !important;
 	background-color: $body-lighter-accent;
@@ -72,6 +76,11 @@ a {
 .btn-blurple {
 	background-color: $blurple;
 	border-color: $blurple;
+}
+
+.title {
+	font-family: "Russo One", sans-serif;
+	font-weight: normal;
 }
 
 html,

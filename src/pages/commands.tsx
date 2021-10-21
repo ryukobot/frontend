@@ -56,7 +56,7 @@ export default function Commands({ categories }: { categories: any }) {
 	if (router.isFallback) {
 		return (
 			<Container>
-				<title>Commands - Ryuko</title>
+				<title>Commands - Bizkit</title>
 				<h1 className={Styles.title}>Commands</h1>
 				<div className={Styles.categoryContainer}>
 					<Navbar
@@ -180,7 +180,7 @@ export default function Commands({ categories }: { categories: any }) {
 
 	return (
 		<Container>
-			<title>Commands - Ryuko</title>
+			<title>Commands - Bizkit</title>
 			<h1 className={Styles.title}>Commands</h1>
 			<div className={Styles.categoryContainer}>
 				<Navbar

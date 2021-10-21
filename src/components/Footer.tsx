@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Styles from "../styles/components/Footer.module.scss";
 
-import Logo from "../img/logo.webp";
+import Logo from "../img/logo.png";
 import DiscordLogo from "../img/Discord-Logo-Color.svg";
 import GithubLogo from "../img/github.svg";
 
@@ -30,7 +30,7 @@ export default function Footer() {
 								<span
 									className={`${Styles.title} vertical-align-middle`}
 								>
-									Ryuko
+									Bizkit
 								</span>
 							</div>
 							<div className={Styles.description}>
@@ -71,7 +71,7 @@ export default function Footer() {
 					</Col>
 					<Col className={Styles.links}>
 						<b className={Styles.title + " " + Styles.linktitle}>
-							Ryuko
+							Bizkit
 						</b>
 						<ListGroup variant="flush">
 							<ListGroup.Item

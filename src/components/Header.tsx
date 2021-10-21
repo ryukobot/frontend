@@ -3,7 +3,7 @@ import Image from "next/image";
 import Styles from "../styles/Header.module.scss";
 import InviteButton from "./InviteButton";
 
-import Logo from "../img/logo.webp";
+import Logo from "../img/logo.png";
 
 // Bootstrap Imports
 import Container from "react-bootstrap/Container";
@@ -30,10 +30,7 @@ export default function Header() {
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse>
-					<Nav
-						activeKey={"/" + location[1]}
-						className={Styles.navbar}
-					>
+					<Nav activeKey={"/" + location[1]}>
 						<Nav.Link href="/" className={Styles.navbutton}>
 							Home
 						</Nav.Link>

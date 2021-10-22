@@ -106,19 +106,19 @@ export default function Footer() {
 					</Col>
 					<Col className={Styles.links}>
 						<b className={Styles.title + " " + Styles.linktitle}>
-							Legal
+							Extra
 						</b>
 						<ListGroup variant="flush">
 							<ListGroup.Item
 								action
-								href="#link1"
+								href="/docs/Legal/Terms-of-Service"
 								className={Styles.link + " link"}
 							>
 								Terms of Service
 							</ListGroup.Item>
 							<ListGroup.Item
 								action
-								href="#link1"
+								href="/docs/Legal/Privacy-Policy"
 								className={Styles.link + " link"}
 							>
 								Privacy Policy
@@ -144,7 +144,7 @@ export default function Footer() {
 					</Col>
 					<Col style={{ textAlign: "right", alignSelf: "center" }}>
 						<small className={Styles.darker}>
-							Copyright ©️ 2021 Chaker LLC.
+							© 2021 All rights reserved.
 						</small>
 					</Col>
 				</Row>

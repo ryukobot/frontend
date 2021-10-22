@@ -13,6 +13,9 @@ import Col from "react-bootstrap/Col";
 // Feature Images
 import MusicScreenshot from "../img/music.png";
 import JoinLeaveScreenshot from "../img/joinleave.png";
+import LoggingScreenshot from "../img/logging.png";
+import ModerationScreenshot from "../img/moderation.png";
+import LobbyScreenshot from "../img/lobbies.png";
 
 interface IStats {
 	guilds: number;
@@ -56,7 +59,7 @@ export default function Home({ stats }: { stats: IStats }) {
 						<ul>
 							<li>
 								Play music from 5+ Sources! YouTube, Spotify,
-								Soundcloud, Twitch, Bancamp, Direct Links, and
+								Soundcloud, Twitch, Bandcamp, Direct Links, and
 								more!
 							</li>
 							<li>
@@ -89,17 +92,23 @@ export default function Home({ stats }: { stats: IStats }) {
 								Member Leaves, Bans, Kicks, Voice Channel
 								Updates, and more to come!
 							</li>
-							<li>Invite Tracking</li>
+							<li>
+								A weird person was invited to your server? See
+								who invited them with Invite Tracking.
+							</li>
 							<li>
 								The abililty to seperate logs into different
 								channels keep them organized, and readable.
 							</li>
-							<li>Clean, Logs are Readable and Informative.</li>
+							<li>
+								Logs are Readable and Informative. Get all the
+								needed information with just a glance.
+							</li>
 						</ul>
 					</Col>
 					<Col md="auto">
 						<Image
-							src={MusicScreenshot}
+							src={LoggingScreenshot}
 							alt="Logging in action"
 							layout="intrinsic"
 						/>
@@ -108,7 +117,7 @@ export default function Home({ stats }: { stats: IStats }) {
 				<Row className={Styles.feature}>
 					<Col md="auto">
 						<Image
-							src={MusicScreenshot}
+							src={ModerationScreenshot}
 							alt="Moderation"
 							layout="intrinsic"
 						/>
@@ -139,7 +148,7 @@ export default function Home({ stats }: { stats: IStats }) {
 						</ul>
 					</Col>
 				</Row>
-				<Row className={Styles.feature}>
+				{/*<Row className={Styles.feature}>
 					<Col>
 						<h1 className={Styles.title}>
 							🤬 Keep your Channels Clean
@@ -195,6 +204,7 @@ export default function Home({ stats }: { stats: IStats }) {
 						</ul>
 					</Col>
 				</Row>
+	*/}
 				<Row className={Styles.feature}>
 					<Col>
 						<h1 className={Styles.title}>👋 Greet New Members</h1>
@@ -204,9 +214,10 @@ export default function Home({ stats }: { stats: IStats }) {
 								<i>special</i> channel with ease!
 							</li>
 							<li>
-								Want to change what the messages look like? You
-								can! There are placeholders you can add in for
-								mentions, username, and more!
+								Placeholders like <code>(mention</code>,{" "}
+								<code>(username</code>, and <code>(tag</code>{" "}
+								allow you to customize join and leave messages
+								to your heart{"'"}s content!
 							</li>
 						</ul>
 					</Col>
@@ -221,7 +232,7 @@ export default function Home({ stats }: { stats: IStats }) {
 				<Row className={Styles.feature}>
 					<Col md="auto">
 						<Image
-							src={MusicScreenshot}
+							src={LobbyScreenshot}
 							alt="Voice Lobbies"
 							layout="intrinsic"
 						/>
@@ -232,19 +243,18 @@ export default function Home({ stats }: { stats: IStats }) {
 						</h1>
 						<ul>
 							<li>
-								Keep out Bots and Alts, Bizkit has an advanced
-								Verification System to ensure that new Members
-								are legimate.
+								Want to have a private conversation, and don
+								{"'"}t want to create a clunky group chat? Then
+								voice lobbies are for you!
 							</li>
 							<li>
-								Highly Configurable! Use Verification as a
-								simple Captcha to keep Bots out, or go all in
-								and automatically Ban all VPN/Proxy Users, and
-								Alts.
+								Create temporary channels that you have full
+								control over. Change the name, quality, user
+								limit, and permissions!
 							</li>
 							<li>
-								VPN/Proxy Detection, Cookies, and IP Addresses
-								are used for Verifying Members.
+								They automatically delete too! Once you leave
+								the channel, it disappears.
 							</li>
 						</ul>
 					</Col>

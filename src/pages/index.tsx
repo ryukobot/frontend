@@ -260,17 +260,6 @@ export default function Home({ stats }: { stats: IStats }) {
 					</Col>
 				</Row>
 			</Container>
-			<div style={{ textAlign: "center", marginTop: "13vh" }}>
-				<h2 style={{ fontSize: "3rem" }} className={Styles.title}>
-					Stop what you&apos;re doing.
-				</h2>
-				<p style={{ marginBottom: "1vh" }}>
-					It&apos;s time to use Bizkit in your server, simplify your
-					life.
-				</p>
-				<br />
-				<InviteButton />
-			</div>
 			<div style={{ marginTop: "10vh", marginBottom: "6vh" }}>
 				<Row className={Styles.statsrow}>
 					<Col>

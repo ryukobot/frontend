@@ -263,19 +263,19 @@ export default function Home({ stats }: { stats: IStats }) {
 			<div style={{ marginTop: "10vh", marginBottom: "6vh" }}>
 				<Row className={Styles.statsrow}>
 					<Col>
-						<h1 className={Styles.title}>{stats.guilds}</h1>
+						<h1 className={Styles.title}>{stats.guilds.toLocaleString()}</h1>
 						<h1 className={Styles.title}>Servers</h1>
 					</Col>
 					<Col>
-						<h1 className={Styles.title}>{stats.users}</h1>
+						<h1 className={Styles.title}>{stats.users.toLocaleString()}</h1>
 						<h1 className={Styles.title}>Users</h1>
 					</Col>
 					<Col>
-						<h1 className={Styles.title}>{stats.channels}</h1>
+						<h1 className={Styles.title}>{stats.channels.toLocaleString()}</h1>
 						<h1 className={Styles.title}>Channels</h1>
 					</Col>
 					<Col>
-						<h1 className={Styles.title}>{stats.shards}</h1>
+						<h1 className={Styles.title}>{stats.shards.toLocaleString()}</h1>
 						<h1 className={Styles.title}>Shards</h1>
 					</Col>
 				</Row>

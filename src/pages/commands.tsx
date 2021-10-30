@@ -22,6 +22,7 @@ type Command = {
 	cooldown: number;
 	ownerOnly: boolean;
 	modOnly: boolean;
+	adminOnly: boolean;
 	categoryID: string;
 	userPermissions: string[];
 	clientPermissions: string[];
@@ -258,8 +259,11 @@ export default function Commands({ categories }: { categories: any }) {
 														{command.modOnly
 															? "Mod or "
 															: ""}
+														{command.adminOnly
+															? "Admin or "
+															: ""}
 														{command.ownerOnly
-															? "Owner or "
+															? "Owner"
 															: ""}
 														{command.userPermissions
 															? command.userPermissions
